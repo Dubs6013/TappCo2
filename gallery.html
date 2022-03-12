@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TappCo Construction & Remodeling</title>
+
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+    <style>
+      img {
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="centerme">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        
+        <h1>TappCo Construction & Remodeling</h1>
+
+        <!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <img id="drag1" src="image\ScottTapp.jpg" draggable="true" ondragstart="drag(event)" width="600" height="400"> -->
+
+        <div class="row">
+            <div class="column">
+              <div class="content">
+                <a href="projects\lakewood.html"><img src="images/lakewoodproject.jpg" alt="Lakewood" style="width:100%"></a>
+                <h3>Lakewood Project</h3>
+                <p>The Lakewood Project consisted of a bathroom remodel.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <a href="projects/scotttapp.html"><img src="images/ScottTapp.jpg" alt="Scott Tapp" style="width:100%"></a>
+                <h3>Scott Tapp</h3>
+                <p>Scott Tapp: owner, operator, and all around Bad-Ass.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <a href="projects/tappcologo.html"><img src="images/TappCo Logo.jpg" alt="Logo" style="width:100%"></a>
+                <h3>TappCo Logo</h3>
+                <p>This is the logo I went with. This is what I do. I am TappCo.</p>
+              </div>
+            </div>
+          </div>
+
+        <img src="image/TappCo Logo.jpg" width="400" height="300">
+
+        
+
+    </div>
+    
+</body>
+</html>

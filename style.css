@@ -1,0 +1,155 @@
+.centerme { 
+    margin: auto;
+    width: 800px;
+    text-align: justify}
+
+body {
+    background-color: #786d5f;
+} 
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color:#fff5ee;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #fff5ee;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: #fff5ee;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: white;
+}
+
+.nav {
+    overflow: hidden;
+    text-align: justify;
+    background-color: #333333;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color: black;
+    color: #dddddd;
+}
+
+.nav a:active {
+    background-color: #ebf4fa;
+    color: black;
+}
+
+.cta {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.cta a {
+    float: center;
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.cta a:hover {
+    background-color: silver;
+    color: blue;
+}
+
+.cta a:active{
+    background-color: #4caf50;
+    color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+div {
+    display: block;
+}
+
+iframe {
+    position: center;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    height: 15%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+}
+
+.content {
+    background-color: black;
+    padding: 10px;
+  }
+
+
